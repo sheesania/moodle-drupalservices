@@ -486,7 +486,7 @@ class auth_plugin_drupalservices extends auth_plugin_base
     function cohort_exists($drupal_cohort_name)
     {
         global $DB;
-        $context = get_context_instance(CONTEXT_SYSTEM);
+        $context = context_system::instance();
         $clause = array('contextid' => $context->id);
         $clause['component'] = 'auth_drupalservices';
         $moodle_cohorts = $DB->get_records('cohort', $clause);
@@ -506,7 +506,7 @@ class auth_plugin_drupalservices extends auth_plugin_base
     function moodle_cohorts()
     {
         global $DB;
-        $context = get_context_instance(CONTEXT_SYSTEM);
+        $context = context_system::instance();
         $clause = array('contextid' => $context->id);
         $clause['component'] = 'auth_drupalservices';
         $moodle_cohorts = $DB->get_records('cohort', $clause);
