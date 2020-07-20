@@ -90,7 +90,6 @@ class auth_plugin_drupalservices extends auth_plugin_base
                 }
                 $encodedpath = urlencode($path . $args);
                 redirect($this->config->host_uri . "/user/login?moodle_url=true&destination=" . $encodedpath);
-                //redirect($this->config->host_uri . "/user/login?moodle_url=true&destination=" . $urltogo);
             }
             return; // just send user to login page
             

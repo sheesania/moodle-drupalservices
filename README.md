@@ -1,5 +1,3 @@
-Forked from https://bitbucket.org/mylearningconsultants/encounter-auth_drupalservices which is a fork of https://github.com/cannod/moodle-drupalservices
-
 moodle-drupalservices
 =====================
 
